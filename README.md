@@ -1,4 +1,4 @@
-# Ελένη Γεωργούδη <img src="https://github.com/το-username-σου.png" align="right" width="150">
+# Ελένη Γεωργούδη <img IMG_0888.jpeg" align="right" width="150">
 ### Τελειόφοιτη Εφαρμοσμένης Πληροφορικής | ΠΑΜΑΚ (Κατεύθυνση ΕΤΥ)
 
 ---
