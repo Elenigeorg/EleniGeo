@@ -12,12 +12,12 @@
 
 ---
 
-## 🛠 Τεχνικές Δεξιότητες
-* **Languages:** `Python`, `Java`, `C`, `SQL`, `JavaScript`
-* **Web:** `HTML5`, `CSS3`, `JS`
-* **AI/ML:** `Neural Networks`, `Clustering`, `Dimension Reduction`, `NumPy`, `Pandas`
-* **Cybersecurity:** `Cryptography Algorithms`
-* **OS/Tools:** `Linux (Power User)`, `Git`, `3D Studio Max`, `Eclipse`, `Visual Studio Code`, `Visual Paradigm`, `Visual Box`
+### 🛠 Τεχνολογίες & Εργαλεία
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
 
 ---
 
