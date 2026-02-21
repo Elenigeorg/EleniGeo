@@ -2,76 +2,207 @@
 <html lang="el">
 <head>
     <meta charset="UTF-8">
-    <title>Eleni Georgoudi | Curriculum Vitae</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ελένη Γεωργούδη | Resume</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    
     <style>
-        :root { --main-color: #2563eb; --text-dark: #1f2937; }
-        body { font-family: 'Inter', sans-serif; line-height: 1.5; color: var(--text-dark); max-width: 800px; margin: auto; padding: 40px; }
-        
-        /* Code-like details */
-        .skill-tag { 
-            font-family: 'Fira Code', monospace; 
-            font-size: 0.85em; 
-            background: #eff6ff; 
-            color: var(--main-color); 
-            padding: 3px 8px; 
-            border-radius: 5px;
-            border: 1px solid #dbeafe;
+        :root {
+            --primary: #2563eb;
+            --dark: #111827;
+            --gray: #6b7280;
+            --bg-skill: #f1f5f9;
         }
 
-        header { border-bottom: 3px solid var(--text-dark); padding-bottom: 20px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; }
-        h1 { margin: 0; font-size: 2.5em; letter-spacing: -1px; }
-        .contact { font-size: 0.9em; text-align: right; color: #6b7280; }
+        * { box-sizing: border-box; }
         
-        section { margin-bottom: 25px; }
-        h2 { font-size: 1.1em; text-transform: uppercase; letter-spacing: 2px; border-left: 4px solid var(--main-color); padding-left: 15px; margin-bottom: 15px; }
-        
-        .project-card { transition: all 0.2s; padding: 10px; border-radius: 8px; border: 1px solid transparent; }
-        .project-card:hover { background: #fafafa; border-color: #eee; transform: translateX(5px); }
-        
-        img.profile-pic { width: 130px; border-radius: 12px; filter: grayscale(100%); transition: 0.3s; }
-        img.profile-pic:hover { filter: grayscale(0%); }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 0 40px;
+            background-color: #fff;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--dark);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: -1.5px;
+            line-height: 1;
+        }
+
+        .header-text p {
+            margin: 10px 0 0 0;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.9em;
+            color: var(--gray);
+        }
+
+        .contact-info a {
+            color: var(--gray);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover { color: var(--primary); }
+
+        /* Profile Image */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            filter: grayscale(100%);
+            transition: 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .profile-img:hover { filter: grayscale(0%); }
+
+        /* Sections */
+        section { margin-bottom: 35px; }
+
+        h2 {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85em;
+            background: var(--bg-skill);
+            padding: 4px 10px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Project Cards */
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .project:hover {
+            background: #f9fafb;
+            border-color: #f3f4f6;
+            transform: translateX(5px);
+        }
+
+        .project-title {
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .university { font-weight: 600; color: var(--dark); }
+
+        @media print {
+            body { margin: 0; padding: 20px; }
+            .project:hover { transform: none; background: none; }
+            header { border-bottom: 1px solid #000; }
+        }
+
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            .contact-info { text-align: center; margin-top: 20px; }
+            .profile-img { margin-bottom: 20px; order: -1; }
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <div>
+        <div class="header-text">
             <h1>Ελένη Γεωργούδη</h1>
-            <p style="margin:5px 0; color:var(--main-color); font-weight:600;">Προγραμματίστρια & Τελειόφοιτη Εφαρμοσμένης Πληροφορικής ΠΑΜΑΚ</p>
+            <p>Applied Informatics Student @ UoM</p>
+            <div class="contact-info" style="text-align: left; margin-top: 15px;">
+                📍 Θεσσαλονίκη | 📧 <a href="mailto:your-email@gmail.com">your-email@gmail.com</a><br>
+                🔗 <a href="#">LinkedIn</a> | 💻 <a href="#">GitHub</a>
+            </div>
         </div>
-        <div class="contact">
-            thessaloniki, GR<br>
-            <a href="mailto:email@example.com">email@example.com</a><br>
-            <a href="https://linkedin.com/in/eleni">linkedin.com/in/eleni</a>
-        </div>
+        <img src="IMG_0888.jpeg" alt="Eleni Georgoudi" class="profile-img">
     </header>
 
     <section>
         <h2>Technical Stack</h2>
-        <div>
-            <span class="skill-tag">Python</span> <span class="skill-tag">Java</span> 
-            <span class="skill-tag">C</span> <span class="skill-tag">SQL</span> 
-            <span class="skill-tag">JavaScript</span> <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Git</span>
+        <div class="skills-container">
+            <span class="skill">Python</span>
+            <span class="skill">Java (OOP)</span>
+            <span class="skill">C</span>
+            <span class="skill">SQL</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Linux</span>
+            <span class="skill">Git</span>
         </div>
     </section>
 
     <section>
-        <h2>Selected Projects</h2>
-        <div class="project-card">
-            <strong>Πτυχιακή Εργασία: Linux Interactive Guide</strong>
-            <p style="font-size:0.9em; color:#4b5563;">Σχεδιασμός και υλοποίηση πλατφόρμας εκμάθησης συστημάτων Linux με χρήση <span class="skill-tag">HTML/CSS/JS</span>.</p>
-        </div>
-        <div class="project-card">
-            <strong>Image Denoising Tool</strong>
-            <p style="font-size:0.9em; color:#4b5563;">Εφαρμογή μαθηματικών αλγορίθμων σε <span class="skill-tag">Python</span> για την αφαίρεση θορύβου από ψηφιακές εικόνες.</p>
+        <h2>Εκπαίδευση</h2>
+        <div class="project">
+            <span class="university">Πανεπιστήμιο Μακεδονίας (ΠΑΜΑΚ)</span> | 2021 — 2025<br>
+            <small>Πτυχίο Εφαρμοσμένης Πληροφορικής - Κατεύθυνση Επιστήμη & Τεχνολογία Υπολογιστών</small>
+            <p style="font-size: 0.9em; margin-top: 10px;">
+                <strong>Εξειδικευμένα Μαθήματα:</strong> Νευρωνικά Δίκτυα, Κρυπτογραφία, Μηχανική Μάθηση, 
+                Τεχνητή Νοημοσύνη, Ποιότητα Λογισμικού, Αριθμητική Ανάλυση.
+            </p>
         </div>
     </section>
 
     <section>
-        <h2>Education</h2>
-        <p><strong>Πανεπιστήμιο Μακεδονίας</strong> | 2021 — 2025<br>
-        <small>Κατεύθυνση: Επιστήμη & Τεχνολογία Υπολογιστών. Εστίαση σε Νευρωνικά Δίκτυα και Κρυπτογραφία.</small></p>
+        <h2>Projects & Έρευνα</h2>
+        <div class="project">
+            <span class="project-title">Πτυχιακή Εργασία: Οδηγός Συστημάτων Linux</span>
+            <p style="font-size: 0.9em;">Ανάπτυξη διαδραστικής web πλατφόρμας για την εκμάθηση διαχείρισης συστημάτων Linux. Χρήση HTML, CSS και JavaScript για τη δημιουργία ενός πλήρους τεχνικού οδηγού.</p>
+        </div>
+
+        <div class="project">
+            <span class="project-title">Image Denoising Tool (Αριθμητική Ανάλυση)</span>
+            <p style="font-size: 0.9em;">Υλοποίηση αλγορίθμων σε Python για την αφαίρεση θορύβου από εικόνες με χρήση μαθηματικών τεχνικών (matrices, SVD).</p>
+        </div>
+
+        <div class="project">
+            <span class="project-title">Machine Learning: Clustering & Reduction</span>
+            <p style="font-size: 0.9em;">Εκπαίδευση μοντέλων συσταδοποίησης και εφαρμογή τεχνικών μείωσης διαστάσεων για ανάλυση μεγάλων δεδομένων.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ξένες Γλώσσες</h2>
+        <p><strong>Αγγλικά:</strong> Proficiency (C2 Level) - Άριστη γνώση.</p>
     </section>
 
 </body>
