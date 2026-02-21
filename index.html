@@ -2,230 +2,97 @@
 <html lang="el">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ελένη Γεωργούδη | Resume</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
-    
+    <title>Βιογραφικό | Ελένη Γεωργούδη</title>
     <style>
-        :root {
-            --primary: #2563eb;
-            --dark: #111827;
-            --gray: #6b7280;
-            --bg-skill: #f1f5f9;
-        }
-
-        * { box-sizing: border-box; }
-        
+        /* ΒΑΣΙΚΕΣ ΡΥΘΜΙΣΕΙΣ */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, sans-serif; /* Απλή και καθαρή γραμματοσειρά */
             line-height: 1.6;
-            color: var(--dark);
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 0 40px;
-            background-color: #fff;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        /* Header Styles */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid var(--dark);
-            padding-bottom: 30px;
-            margin-bottom: 30px;
+        /* ΕΠΙΚΕΦΑΛΙΔΑ */
+        .header {
+            border-bottom: 2px solid #444;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
-        .header-text h1 {
-            margin: 0;
-            font-size: 2.8em;
-            letter-spacing: -1.5px;
-            line-height: 1;
+        .profile-pic {
+            float: right;
+            width: 130px;
+            border-radius: 10px;
         }
 
-        .header-text p {
-            margin: 10px 0 0 0;
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-
-        .contact-info {
-            text-align: right;
-            font-size: 0.9em;
-            color: var(--gray);
-        }
-
-        .contact-info a {
-            color: var(--gray);
-            text-decoration: none;
-        }
-
-        .contact-info a:hover { color: var(--primary); }
-
-        /* Profile Image */
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 12px;
-            filter: grayscale(100%);
-            transition: 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        /* Sections */
-        section { margin-bottom: 35px; }
-
+        h1 { margin: 0; color: #000; }
+        
+        /* ΕΝΟΤΗΤΕΣ */
         h2 {
-            font-size: 0.9em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--gray);
-            margin-bottom: 20px;
-            border-left: 4px solid var(--primary);
-            padding-left: 15px;
+            background: #f4f4f4;
+            padding: 5px 10px;
+            font-size: 1.2em;
+            border-left: 5px solid #333;
         }
 
-        /* Skills Tags */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
+        .content { margin-bottom: 20px; }
 
-        .skill {
-            font-family: 'Fira Code', monospace;
-            font-size: 0.85em;
-            background: var(--bg-skill);
-            padding: 4px 10px;
-            border-radius: 6px;
-            border: 1px solid #e2e8f0;
-        }
+        ul { padding-left: 20px; }
 
-        /* Project Cards */
-        .project {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            transition: 0.2s;
-            border: 1px solid transparent;
-        }
-
-        .project:hover {
-            background: #f9fafb;
-            border-color: #f3f4f6;
-            transform: translateX(5px);
-        }
-
-        .project-title {
-            font-weight: 700;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .university { font-weight: 600; color: var(--dark); }
-
-        @media print {
-            body { margin: 0; padding: 20px; }
-            .project:hover { transform: none; background: none; }
-            header { border-bottom: 1px solid #000; }
-        }
-
-        @media (max-width: 600px) {
-            header { flex-direction: column; text-align: center; }
-            .contact-info { text-align: center; margin-top: 20px; }
-            .profile-img { margin-bottom: 20px; order: -1; }
+        /* ΓΙΑ ΝΑ ΜΗΝ ΜΠΛΕΚΕΤΑΙ Η ΦΩΤΟΓΡΑΦΙΑ ΜΕ ΤΟ ΚΕΙΜΕΝΟ */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="header-text">
-            <h1>Ελένη Γεωργούδη</h1>
-            <p>Applied Informatics Student @ UoM</p>
-            <div class="contact-info" style="text-align: left; margin-top: 15px;">
-                📍 Θεσσαλονίκη | 📧 <a href="mailto:your-email@gmail.com">your-email@gmail.com</a><br>
-                🔗 <a href="#">LinkedIn</a> | 💻 <a href="#">GitHub</a>
-            </div>
-        </div>
-        <img src="IMG_0888.jpeg" alt="Eleni Georgoudi" class="profile-img">
-    </header>
+    <div class="header clearfix">
+        <img src="IMG_0888.jpeg" alt="Ελένη Γεωργούδη" class="profile-pic">
+        <h1>Ελένη Γεωργούδη</h1>
+        <p>Φοιτήτρια Εφαρμοσμένης Πληροφορικής | Πανεπιστήμιο Μακεδονίας</p>
+        <p>📍 Θεσσαλονίκη | 📧 email@example.com</p>
+        <p>🔗 <a href="https://github.com/your-username">GitHub Προφίλ</a></p>
+    </div>
 
-    <section>
+    <div class="content">
         <h2>Προφίλ</h2>
-        <p>
-            Είμαι φοιτήτρια στο 4ο έτος του τμήματος **Εφαρμοσμένης Πληροφορικής** στο ΠΑΜΑΚ. 
-            Διαθέτω ισχυρό υπόβαθρο στην ανάπτυξη λογισμικού, την τεχνητή νοημοσύνη και την αριθμητική ανάλυση. 
-            Εστιάζω στη δημιουργία ποιοτικού κώδικα και στην επίλυση σύνθετων υπολογιστικών προβλημάτων, 
-            με ιδιαίτερο ενδιαφέρον για τα συστήματα Linux και το Machine Learning.
-        </p>
-    </section>
+        <p>Είμαι τελειόφοιτη φοιτήτρια στο 4ο έτος του ΠΑΜΑΚ (Κατεύθυνση: Επιστήμη & Τεχνολογία Υπολογιστών). Αναζητώ θέση <strong>πρακτικής άσκησης</strong> για να εφαρμόσω τις γνώσεις μου στον προγραμματισμό και την ανάλυση δεδομένων σε πραγματικές συνθήκες εργασίας.</p>
+    </div>
 
-    <section>
-        <h2>Technical Stack</h2>
-        <div class="skills-container">
-            <span class="skill">Python</span>
-            <span class="skill">Java (OOP)</span>
-            <span class="skill">C</span>
-            <span class="skill">SQL</span>
-            <span class="skill">HTML/CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">Linux</span>
-            <span class="skill">Git</span>
-        </div>
-    </section>
-
-    <section>
+    <div class="content">
         <h2>Εκπαίδευση</h2>
-        <div class="project">
-            <span class="university">Πανεπιστήμιο Μακεδονίας (ΠΑΜΑΚ)</span> | 2021 — 2025<br>
-            <small>Πτυχίο Εφαρμοσμένης Πληροφορικής - Κατεύθυνση Επιστήμη & Τεχνολογία Υπολογιστών</small>
-            <p style="font-size: 0.9em; margin-top: 10px;">
-                <strong>Εξειδικευμένα Μαθήματα:</strong> Νευρωνικά Δίκτυα, Κρυπτογραφία, Μηχανική Μάθηση, 
-                Τεχνητή Νοημοσύνη, Ποιότητα Λογισμικού, Αριθμητική Ανάλυση.
-            </p>
-        </div>
-    </section>
+        <p><strong>Πανεπιστήμιο Μακεδονίας</strong> (2021 - Σήμερα)</p>
+        <ul>
+            <li>Πτυχίο Εφαρμοσμένης Πληροφορικής</li>
+            <li>Σημαντικά Μαθήματα: Νευρωνικά Δίκτυα, Κρυπτογραφία, Μηχανική Μάθηση, Τεχνητή Νοημοσύνη, Ποιότητα Λογισμικού.</li>
+        </ul>
+    </div>
 
-    <section>
-        <h2>Projects & Έρευνα</h2>
-        <div class="project">
-            <span class="project-title">Πτυχιακή Εργασία: Ολοκληρωμένος Οδηγός Linux</span>
-            <p style="font-size: 0.9em;">Ανάπτυξη διαδραστικής πλατφόρμας εκμάθησης. Εμβαθύνω στην αρχιτεκτονική του Linux, τη διαχείριση αρχείων και τη χρήση τερματικού, χρησιμοποιώντας <strong>HTML, CSS και JavaScript</strong>.</p>
-        </div>
+    <div class="content">
+        <h2>Τεχνικές Δεξιότητες</h2>
+        <ul>
+            <li><strong>Γλώσσες:</strong> Python, Java, C, SQL.</li>
+            <li><strong>Web:</strong> HTML, CSS, JavaScript.</li>
+            <li><strong>Εργαλεία:</strong> Linux, Git, 3D Studio Max.</li>
+        </ul>
+    </div>
 
-        <div class="project">
-            <span class="project-title">Image Denoising (Αριθμητική Ανάλυση)</span>
-            <p style="font-size: 0.9em;">Υλοποίηση αλγορίθμων για την αφαίρεση θορύβου από εικόνες. Εφαρμογή μαθηματικών μεθόδων για τη βελτίωση και βελτιστοποίηση ψηφιακών δεδομένων.</p>
-        </div>
+    <div class="content">
+        <h2>Projects</h2>
+        <p><strong>Πτυχιακή Εργασία:</strong> Δημιουργία πλήρους οδηγού για Linux (HTML, CSS, JS).</p>
+        <p><strong>Αφαίρεση Θορύβου Εικόνας:</strong> Χρήση Python και μαθηματικών τεχνικών για επεξεργασία εικόνας.</p>
+        <p><strong>Machine Learning:</strong> Project πάνω σε συσταδοποίηση (Clustering) και μείωση διαστάσεων δεδομένων.</p>
+    </div>
 
-        <div class="project">
-            <span class="project-title">Machine Learning: Clustering & Reduction</span>
-            <p style="font-size: 0.9em;">Σχεδιασμός και εκπαίδευση μοντέλου συσταδοποίησης και εφαρμογή τεχνικών μείωσης διαστάσεων για την επεξεργασία δεδομένων.</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Γιατί Εγώ</h2>
-        <p>
-            Ως φοιτήτρια του ΠΑΜΑΚ, συνδυάζω το μαθηματικό υπόβαθρο με την προγραμματιστική πειθαρχία. 
-            Διαθέτω <strong>ικανότητα γρήγορης προσαρμογής</strong> σε νέες τεχνολογίες και αναλυτική σκέψη 
-            στην επίλυση προβλημάτων. Αναζητώ μια θέση πρακτικής άσκησης όπου μπορώ να συνεισφέρω 
-            άμεσα στην ομάδα, εφαρμόζοντας τις γνώσεις μου σε πραγματικές συνθήκες, ενώ παράλληλα 
-            εξελίσσομαι επαγγελματικά.
-        </p>
-    </section>
-
-    <section>
-        <h2>Ξένες Γλώσσες & Soft Skills</h2>
-        <p>
-            <strong>Αγγλικά:</strong> Proficiency (C2 Level) - Άριστη γνώση.<br>
-            <strong>Δεξιότητες:</strong> Αναλυτική Σκέψη, Επίλυση Προβλημάτων, Προσαρμοστικότητα, Ομαδική Συνεργασία.
-        </p>
-    </section>
+    <div class="content">
+        <h2>Γλώσσες</h2>
+        <p><strong>Αγγλικά:</strong> Επίπεδο C2 (Proficiency).</p>
+    </div>
 
 </body>
 </html>
