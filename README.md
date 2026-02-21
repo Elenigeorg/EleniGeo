@@ -1,4 +1,4 @@
-# Ελένη Γεωργούδη
+Kai# Ελένη Γεωργούδη
 **Software Engineering Student | University of Macedonia** 📍 Thessaloniki, Greece | ✉️ [Email] | 🔗 [LinkedIn] | 💻 [GitHub]
 
 ---
