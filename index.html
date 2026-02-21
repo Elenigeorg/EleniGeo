@@ -12,35 +12,41 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f0f8ff;
+            /* Απαλό λιλά φόντο σελίδας */
+            background-color: #f8f4ff; 
         }
 
         /* ΕΠΙΚΕΦΑΛΙΔΑ */
         .header {
-        border-bottom: 3px solid #89cff0;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-        background: white; 
-        padding: 20px;
-        border-radius: 10px;
+            /* Λιλά διαχωριστική γραμμή */
+            border-bottom: 3px solid #c8a2c8; 
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            background: white; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
         .profile-pic {
             float: right;
             width: 130px;
             border-radius: 10px;
+            /* Προαιρετικό περίγραμμα στη φωτογραφία */
+            border: 2px solid #c8a2c8; 
         }
 
-        h1 { margin: 0; color: #005b96; }        
-       
+        h1 { margin: 0; color: #6a5acd; } /* Slate Blue/Lila για το όνομα */
+        
         /* ΕΝΟΤΗΤΕΣ */
-       h2 {
-        background: #e1f5fe; 
-        padding: 8px 15px;
-        font-size: 1.1em;
-        border-left: 5px solid #89cff0;
-        color: #005b96;
-        border-radius: 0 5px 5px 0;
+        h2 {
+            /* Απαλό λιλά φόντο για τους τίτλους */
+            background: #f3e5f5; 
+            padding: 8px 15px;
+            font-size: 1.1em;
+            border-left: 5px solid #c8a2c8;
+            color: #6a5acd;
+            border-radius: 0 5px 5px 0;
         }
 
         .content { 
@@ -50,7 +56,11 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
+
         ul { padding-left: 20px; }
+
+        a { color: #6a5acd; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
 
         /* ΓΙΑ ΝΑ ΜΗΝ ΜΠΛΕΚΕΤΑΙ Η ΦΩΤΟΓΡΑΦΙΑ ΜΕ ΤΟ ΚΕΙΜΕΝΟ */
         .clearfix::after {
@@ -65,7 +75,7 @@
     <div class="header clearfix">
         <img src="IMG_0888.jpeg" alt="Ελένη Γεωργούδη" class="profile-pic">
         <h1>Ελένη Γεωργούδη</h1>
-        <p>Φοιτήτρια Εφαρμοσμένης Πληροφορικής | Πανεπιστήμιο Μακεδονίας</p>
+        <p style="color: #8e7cc3; font-weight: 600;">Φοιτήτρια Εφαρμοσμένης Πληροφορικής | Πανεπιστήμιο Μακεδονίας</p>
         <p>📍 Θεσσαλονίκη | 📧 georgoudieleni1@gmail.com</p>
         <p>🔗 <a href="https://github.com/Elenigeorg">GitHub Προφίλ</a></p>
     </div>
@@ -89,7 +99,7 @@
         <ul>
             <li><strong>Γλώσσες:</strong> Python, Java, C, SQL.</li>
             <li><strong>Web:</strong> HTML, CSS, JavaScript.</li>
-            <li><strong>Εργαλεία:</strong> Linux, Git, 3D Studio Max, Eclipse, Visual Sudio Code, Visual Paradigm.</li>
+            <li><strong>Εργαλεία:</strong> Linux, Git, 3D Studio Max, Eclipse, Visual Studio Code, Visual Paradigm.</li>
         </ul>
     </div>
 
@@ -99,14 +109,16 @@
         <p><strong>Αφαίρεση Θορύβου Εικόνας:</strong> Χρήση Python και μαθηματικών τεχνικών για επεξεργασία εικόνας.</p>
         <p><strong>Machine Learning:</strong> Project πάνω σε συσταδοποίηση (Clustering) και μείωση διαστάσεων δεδομένων.</p>
     </div>
+
     <div class="content">
         <h2>Εξειδικευμένες Γνώσεις</h2>
         <ul>
-            <li><strong>Σχεδίαση Λογισμικού:</strong> Μοντελοποίηση με UML και κατανόηση του κύκλου ζωής λογισμικού.</li>
+            <li><strong>Σχεδίαση Λογισμικού:</strong> Μοντελοποίηση με UML και κατανόηση του κύκλου ζωής λογισμικού (SDLC).</li>
             <li><strong>Ανάλυση Δεδομένων:</strong> Εφαρμογή μαθηματικών μεθόδων και στατιστικής σε προβλήματα πληροφορικής.</li>
             <li><strong>Ασφάλεια:</strong> Βασικές αρχές ασφάλειας συστημάτων και κρυπτογραφικών πρωτοκόλλων.</li>
         </ul>
     </div>
+
     <div class="content">
         <h2>Γλώσσες</h2>
         <p><strong>Αγγλικά:</strong> Επίπεδο C2 (Proficiency).</p>
