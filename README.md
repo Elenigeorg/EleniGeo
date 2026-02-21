@@ -1,47 +1,42 @@
-<table>
-  <tr>
-    <td><img src="IMG_0888.jpeg" width="150"></td>
-    <td><h1>Ελένη Γεωργούδη</h1><p> Τελειόφοιτη Εφαρμοσμένης Πληροφορικής | ΠΑΜΑΚ (Κατεύθυνση ΕΤΥ) </p></td>
-  </tr>
-</table>
+# Ελένη Γεωργούδη
+**Software Engineering Student | University of Macedonia** 📍 Thessaloniki, Greece | ✉️ [Email] | 🔗 [LinkedIn] | 💻 [GitHub]
 
 ---
 
-## 🚀 Σχετικά με εμένα
-Είμαι φοιτήτρια στο 4ο έτος του τμήματος **Εφαρμοσμένης Πληροφορικής** στο Πανεπιστήμιο Μακεδονίας. Εστιάζω στην **Επιστήμη των Δεδομένων**, την **Κρυπτογραφία** και το **Full-stack Development**. Μου αρέσει να λύνω σύνθετα προβλήματα μέσω αλγορίθμων και να εξερευνώ τις δυνατότητες των Νευρωνικών Δικτύων.
+### 👤 Professional Profile
+Τελειόφοιτη του τμήματος Εφαρμοσμένης Πληροφορικής (ΕΤΥ) με ισχυρό υπόβαθρο στην **Ανάλυση Δεδομένων**, την **Κρυπτογραφία** και τη **Μηχανική Μάθηση**. Εστιάζω στην ανάπτυξη ποιοτικού κώδικα και στην επίλυση σύνθετων υπολογιστικών προβλημάτων μέσω μαθηματικής μοντελοποίησης.
 
 ---
 
-### 🛠 Τεχνολογίες & Εργαλεία
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+### 🎓 Education
+**BSc in Applied Informatics** | *University of Macedonia* | 2021 — Present  
+*Specialization: Computer Science & Technology*
+
+* **Key Coursework:** Neural Networks, Cryptography, Machine Learning, Artificial Intelligence, Software Quality Assurance, Applied Numerical Analysis.
 
 ---
 
-## 📚 Κύρια Projects
-### 🐧 [Interactive Linux Guide](link-to-repo)
-* Ανάπτυξη διαδραστικού οδηγού λειτουργικού συστήματος.
-* **Tech Stack:** HTML, CSS, JavaScript.
-
-### 🖼️ [Image Denoising](link-to-repo)
-* Αφαίρεση θορύβου από εικόνες με χρήση Μαθηματικής Αριθμητικής Ανάλυσης.
-* Υλοποίηση αλγορίθμων για βελτιστοποίηση ψηφιακών δεδομένων.
-
-### 🧠 [Neural Networks & Clustering](link-to-repo)
-* Σχεδίαση μοντέλων Μηχανικής Μάθησης για ταξινόμηση και συσταδοποίηση δεδομένων.
+### 🛠 Technical Skills
+* **Languages:** Python, Java, C, SQL.
+* **Web & Systems:** HTML5, CSS3, JavaScript (ES6+), Linux Administration.
+* **Data Science:** Clustering, Dimension Reduction, Numerical Methods.
+* **Specialized Tools:** Git, 3D Studio Max.
 
 ---
 
-## 🎓 Εκπαίδευση
-* **Πανεπιστήμιο Μακεδονίας:** Πτυχίο Εφαρμοσμένης Πληροφορικής (2021 - Σήμερα)
-* **Πιστοποιήσεις:** English Proficiency (C2)
+### 📂 Key Projects
+**Linux OS Comprehensive Guide** | *Thesis Project* *Development of an interactive educational platform using HTML, CSS, and JavaScript for Linux system administration.*
+
+**Image Denoising via Numerical Analysis** *Implementation of mathematical algorithms to reduce digital noise and optimize image data quality.*
+
+**Machine Learning: Clustering & Reduction** *Design and training of models for data clustering and dimensionality reduction for complex datasets.*
 
 ---
 
-## 📫 Επικοινωνία
-* **LinkedIn:** [Το Προφίλ σου](link)
-* **Email:** [georgoudieleni1@gmail.com]
-* **Location:** Θεσσαλονίκη, Ελλάδα
+### 🌐 Languages
+* **English:** C2 Level (Proficiency) - Full Professional Proficiency.
+
+---
+
+### 🎯 Core Competencies
+Analytical Thinking • Problem Solving • Adaptability • Technical Writing
